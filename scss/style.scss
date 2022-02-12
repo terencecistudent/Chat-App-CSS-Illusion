@@ -1,0 +1,81 @@
+// Body
+@import "mobile-design-desktop";
+@import "mobile-design-tablet";
+@import "mobile-design-mobile";
+@import "information-desktop";
+@import "information-tablet";
+@import "information-mobile";
+@import "footer";
+
+// Utilities
+@import "colors";
+@import "fonts";
+@import "global";
+@import "media-queries";
+
+@include mobile {
+    .left-background__style {
+        width: 11.75rem;
+        height: 31.125rem;
+        background: linear-gradient(to right, $light-violet, $light-magenta);
+        border-radius: 0 0 225px 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    
+      .right-background__style {
+        width: 11.75rem;
+        height: 31.125rem;
+        background-color: #d89eff1a;
+        border-radius: 225px 0 0 0;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+}
+
+@include tablet {
+    .left-background__style {
+        width: 11.75rem;
+        height: 31.125rem;
+        background: linear-gradient(to right, $light-violet, $light-magenta);
+        border-radius: 0 0 225px 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    
+      .right-background__style {
+        width: 11.75rem;
+        height: 31.125rem;
+        background-color: #d89eff1a;
+        border-radius: 225px 0 0 0;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+}
+
+@include desktop {
+  .left-background__style {
+    width: 26.25rem;
+    height: 43.75rem;
+    background: linear-gradient(to right, $light-violet, $light-magenta);
+    border-radius: 0 0 255px 255px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .right-background__style {
+    width: 26.25rem;
+    // height: 43.75rem;
+    height: 100%;
+    background-color: #d89eff1a;
+    border-radius: 255px 0 0 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}

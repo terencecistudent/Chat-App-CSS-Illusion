@@ -1,0 +1,33 @@
+@import "colors";
+@import "fonts";
+
+@media screen and (max-width: 280px) {
+  .text-information__heading {
+    font-size: 2.5rem;
+    font-weight: $fw-bold;
+    color: $very-dark-desaturated-violet;
+    text-align: center;
+    margin-top: 8.375rem;
+  }
+}
+
+@include mobile {
+  .text-information {
+    height: 100%;
+
+    .text-information__heading {
+      font-size: 2.5rem;
+      font-weight: $fw-bold;
+      color: $very-dark-desaturated-violet;
+      text-align: center;
+      margin-top: 4.375rem;
+    }
+
+    .text-information__paragraph {
+      line-height: 28px;
+      color: $dark-grayish-violet;
+      text-align: center;
+      padding: 2rem;
+    }
+  }
+}
